@@ -1,10 +1,10 @@
 Sommet a, b, c;
 
-int nb=3000;
+int nb=2500;
 Point[] points = new Point[nb];
 int i=0;
+
 void setup() {
-  //background(255);
   size(300, 300);
   strokeWeight(2);
 
@@ -32,10 +32,13 @@ void chaos() {
   } else if (i<nb) {
     int s=int(random(0, 3));
     if (s==0) {
+      stroke(255,0,0);
       points[i]=new Point(points[i-1], a);
     } else if (s==1) {
+      stroke(0,255,0);
       points[i]= new Point(points[i-1], b);
     } else if (s==2) {
+      stroke(0,0,255);
       points[i]=new Point(points[i-1], c);
     }
     points[i].placer();
