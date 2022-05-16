@@ -1,3 +1,4 @@
+final float dist =1.0/3.0;
 class Point{
   float x;
   float y;
@@ -6,12 +7,10 @@ class Point{
     this.y=y;
   }
   Point(Point mere, Sommet pere){
-    x=mere.x/2+pere.x/2;
-    y=mere.y/2+pere.y/2;
+    x=mere.x*(1-dist)+pere.x*dist;
+    y=mere.y*(1-dist)+pere.y*dist;
   }
   void placer(){
-    stroke(0);
-    strokeWeight(1);
     point(x,y);
   }
   
