@@ -14,7 +14,7 @@ class Point{
   void placer(){
     stroke(0);
     strokeWeight(1);
-    point(x,y);
+    ellipse(x,y,2,2);
   }
   
 }
