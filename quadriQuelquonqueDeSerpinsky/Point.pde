@@ -12,8 +12,6 @@ class Point{
     y=mere.y/dist+pere.y*(1-1/dist);
   }
   void placer(){
-    stroke(0);
-    strokeWeight(1);
     point(x,y);
   }
   

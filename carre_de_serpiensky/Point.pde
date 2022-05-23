@@ -1,3 +1,4 @@
+final float dist =0.6;
 class Point{
   float x;
   float y;
@@ -8,13 +9,11 @@ class Point{
   
   }
   Point(Point mere, Sommet pere){
-    x=mere.x/dist+pere.x*(1-1/dist);
-    y=mere.y/dist+pere.y*(1-1/dist);
+    x=mere.x*(1-dist)+pere.x*dist;
+    y=mere.y*(1-dist)+pere.y*dist;
   }
   void placer(){
-    stroke(0);
-    strokeWeight(1);
-    ellipse(x,y,2,2);
+    point(x,y);
   }
   
 }

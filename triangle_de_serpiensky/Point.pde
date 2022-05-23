@@ -1,4 +1,4 @@
-final float dist =1.0/3.0;
+final float dist =2.0/3.0;
 class Point{
   float x;
   float y;

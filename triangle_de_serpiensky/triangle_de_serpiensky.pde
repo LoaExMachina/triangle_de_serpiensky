@@ -1,10 +1,11 @@
 Sommet a, b, c;
 
-int nb=2500;
+int nb=2400;
 Point[] points = new Point[nb];
 int i=0;
 
 void setup() {
+  background(255);
   size(300, 300);
   strokeWeight(2);
 
